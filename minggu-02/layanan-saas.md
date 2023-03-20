@@ -36,4 +36,3 @@ Telegram menghadirkan beragam fitur yang sangat dibutuhkan pengguna, terutama da
 2. Penyimpanan berbasis cloud
 3. Maximum pengiriman file cukup besar
 4. Dapat menampung banyak anggota group
-###### Kekurangan
