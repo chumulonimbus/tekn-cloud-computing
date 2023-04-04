@@ -1,7 +1,7 @@
 1. Update Ubuntu
-    1. Login kedalam ubuntu kemudian jalankan perintah berikut
+    1. Login kedalam ubuntu kemudian jalankan perintah berikut<br>
     ![01](images/devstack/img1.png)
-    2. setelah itu lakukan Restart
+    2. setelah itu lakukan Restart<br>
     ![02](images/devstack/img2.png)
 2. Menambahkan user baru
     1. Jalankan perintah berikut untuk membuat user    
