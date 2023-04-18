@@ -1,4 +1,4 @@
-Berikut ini merupakan isi dari latihan dan tugas minggu 05
+Berikut ini merupakan isi dari latihan dan tugas minggu 06
 #### Latihan
 1.  [Instalasi Go, Mysql, dan MongoDB](instalasi.md)
 1.  [Program koneksi](programkoneksi.md)
