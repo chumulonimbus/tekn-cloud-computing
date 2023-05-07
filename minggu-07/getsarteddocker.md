@@ -1,24 +1,24 @@
 ### Get started with docker
 
 #### Part 1
-###### Container
+##### Container
 ```
 Container is a sandboxed process on your machine that is isolated from all other processes on the host machine.
 ```
-###### Images
+##### Images
 ```
 When running a container, it uses an isolated filesystem. This custom filesystem is provided by a container image. Since the image contains the container’s filesystem, it must contain everything needed to run an application - all dependencies, configurations, scripts, binaries, etc.
 ```
 
 #### Part 2
-###### Get app
+##### Get app
 1. Clone source code
 ![01](image/latihan/latihan2/img1.png)
 
 2. View the contents of the cloned repository
 ![02](image/latihan/latihan2/img2.png)
 
-###### Build the app’s container image
+##### Build the app’s container image
 1. Create docker file
 ![03](image/latihan/latihan2/img3.png)
 
@@ -39,7 +39,7 @@ EXPOSE 3000
 3. Build container image
 ![05](image/latihan/latihan2/img5.png)
 
-###### Start an app container
+##### Start an app container
 1. Start container
 ![06](image/latihan/latihan2/img6.png)
 
@@ -50,7 +50,7 @@ EXPOSE 3000
 ![08](image/latihan/latihan2/img8.png)
 
 #### Part 3
-###### Update source code
+##### Update source code
 1. In the src/static/js/app.js file, update line 56 to use the new empty text.
 ![09](image/latihan/latihan2/img9.png)
 
@@ -64,7 +64,7 @@ docker run -dp 3000:3000 getting-started
 ```
 If there's an error remove the older container first
 
-###### Remove the older container
+##### Remove the older container
 1. Get the container id by command bellow
 ![10](image/latihan/latihan2/img10.png)
 
@@ -74,7 +74,7 @@ If there's an error remove the older container first
 3. Remove the container
 ![12](image/latihan/latihan2/img12.png)
 
-###### Start updated container
+##### Start updated container
 1. Start container
 ![13](image/latihan/latihan2/img13.png)
 
@@ -82,7 +82,7 @@ If there's an error remove the older container first
 ![14](image/latihan/latihan2/img13.png)
 
 #### Part 4
-###### Create repository
+##### Create repository
 1. Sign up or sign in to docker hub
 2. Select the Create Repository button
 ![15](image/latihan/latihan2/img15.png)
@@ -92,7 +92,7 @@ If there's an error remove the older container first
 
 4. Select the Create button.
 
-###### Push the image
+##### Push the image
 1. In the command line, try running the push command you see on Docker Hub.
 ![17](image/latihan/latihan2/img17.png)
 
@@ -105,7 +105,7 @@ If there's an error remove the older container first
 4. Now try your push command again
 ![20](image/latihan/latihan2/img20.png)
 
-###### Run the image on a new instance
+##### Run the image on a new instance
 1. Open your browser to Play with Docker
 ![21](image/latihan/latihan2/img21.png)
 
@@ -121,7 +121,7 @@ If there's an error remove the older container first
 ![24](image/latihan/latihan2/img24.png)
 
 #### Part 5
-###### The container’s filesystem
+##### The container’s filesystem
 1. Start an ubuntu container that will create a file named /data.txt with a random number between 1 and 10000.
 ![25](image/latihan/latihan2/img25.png)
 
@@ -134,7 +134,7 @@ If there's an error remove the older container first
 4. Go ahead and remove the first container using the docker rm -f container-id command.
 ![28](image/latihan/latihan2/img28.png)
 
-###### Persist the todo data
+##### Persist the todo data
 1. Create a volume by using the docker volume create command
 ![29](image/latihan/latihan2/img29.png)
 2. Stop and remove the todo app container once again in the Dashboard (or with docker rm -f id), as it is still running without using the persistent volume
@@ -152,6 +152,6 @@ If there's an error remove the older container first
 8. Go ahead and remove the container when you’re done checking out your list
 ![34](image/latihan/latihan2/img30.png)
 
-###### Dive into the volume
+##### Dive into the volume
 1. A lot of people frequently ask “Where is Docker storing my data when I use a volume?” If you want to know, you can use the docker volume inspect command
 ![35](image/latihan/latihan2/img34.png)
