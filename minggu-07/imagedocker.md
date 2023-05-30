@@ -4,7 +4,7 @@ WordPress adalah alat blogging sumber terbuka dan gratis dan sistem manajemen ko
 ```
 docker run --name some-wordpress -p 8080:80 -d wordpress
 ```
-![01](image/latihan/tugas/img1.png)
+![01](image/tugas/img1.png)
 
 Dengan perintah diatas, docker akan melakukan pull library yang dibutuhkan untuk menjalankan image wordpres.
 Setelah proses pull dan run selesai, selanjutnya wordpress bisa kita akses pada web browser dengan alamat :
@@ -12,4 +12,4 @@ Setelah proses pull dan run selesai, selanjutnya wordpress bisa kita akses pada 
 ```
 http://localhost:8080 or http://host-ip:8080
 ```
-![02](image/latihan/tugas/img2.png)
+![02](image/tugas/img2.png)
