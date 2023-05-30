@@ -155,3 +155,8 @@ If there's an error remove the older container first
 ##### Dive into the volume
 1. A lot of people frequently ask “Where is Docker storing my data when I use a volume?” If you want to know, you can use the docker volume inspect command
 ![35](image/latihan/latihan2/img34.png)
+
+#### Part 6
+##### Trying out bind mounts
+1. 
+##### Run your app in a development container
