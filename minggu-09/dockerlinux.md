@@ -54,3 +54,23 @@ Let’s look at the processes running inside the container.
 ![23](image/img22.png)
 
 ### Task 3: Modify a running website
+1. Let’s start the web app and mount the current directory into the container.
+![24](image/img23.png)
+2. Go to the running website and refresh the page. Notice that the site has changed.
+![25](image/img24.png)
+3. Copy a new index.html into the container.
+![26](image/img25.png)
+4. website
+![27](image/img26.png)
+5. Stop and rerun without bind
+![28](image/img27.png)
+6. Build new image
+![29](image/img28.png)
+7. Docker image ls
+![30](image/img29.png)
+8. Rerun new container
+![31](image/img30.png)
+9. Running 2 container
+![32](image/img31.png)
+10. Output
+![33](image/img32.png)
