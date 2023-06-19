@@ -55,9 +55,27 @@
 
 ### Task 3: Modify a running website
 #### Step 1: The Basics
+1. docker swarm init
+![23](image/img23.png)
+2. docker node ls
+![24](image/img24.png)
 #### Step 2: Create an overlay network
+1. docker network create
+![25](image/img25.png)
+2. docker network inspect
+![26](image/img26.png)
 #### Step 3: Create a service
+1. docker servie create
+![27](image/img27.png)
+2. docker service my service
+![28](image/img28.png)
 #### Step 4: Test the network
+1. docker apt install and update
+![29](image/img29.png)
 #### Step 5: Test service discovery
+1. cat resolv
+![30](image/img30.png)
 
 ### Cleaning Up
+1. docker ps
+![31](image/img31.png)
