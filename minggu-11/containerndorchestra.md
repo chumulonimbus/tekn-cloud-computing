@@ -63,5 +63,43 @@
 ![27](image/img27.png)
 
 ### Step 4: Link Extractor API and Web Front End Services
+1. Checkout the step4 branch and list files in it.
+![28](image/img28.png)
+2. So let’s look at the docker-compose.yml file we have:
+![29](image/img29.png)
+3. Now, let’s have a look at the user-facing www/index.php file:
+![30](image/img30.png)
+4. Let’s bring these services up in detached mode using docker-compose utility:
+![31](image/img31.png)
+5. We should now be able to talk to the API service as before:
+![32](image/img32.png)
+6. Before we move on to the next step we need to shut these services down, but Docker Compose can help us take care of it very easily:
+![33](image/img33.png)
+
 ### Step 5: Redis Service for Caching
+1. Checkout the step5 branch and list files in it.
+![34](image/img34.png)
+2. Let’s first inspect the newly added Dockerfile under the ./www folder:
+![35](image/img35.png)
+3. Next, we will look at the API server’s api/main.py file where we are utilizing the Redis cache:
+![36](image/img36.png)
+4. Now, let’s look into the updated docker-compose.yml file:
+![37](image/img37.png)
+5. Let’s boot these services up:
+![38](image/img38.png)
+6. we can use docker-compose exec followed by the redis service name and the Redis CLI’s monitor command:
+![39](image/img39.png)
+7. Now, shut these services down and get ready for the next step:
+![40](image/img40.png)
+
 ### Step 6: Swap Python API Service with Ruby
+1. Checkout the step6 branch and list files in it.
+![41](image/img41.png)
+2. With these in place, let’s boot our service stack:
+![42](image/img42.png)
+3. We should now be able to access the API (using the updated port number):
+![43](image/img43.png)
+4. We can use the tail command with the -f or --follow option to follow the log output live.
+![44](image/img44.png)
+5. Since we have persisted logs, they should still be available after the services are gone:
+![45](image/img45.png)
