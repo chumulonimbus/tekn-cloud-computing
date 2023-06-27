@@ -63,9 +63,9 @@
 ![27](image/img27.png)
 
 ### Step 4: Link Extractor API and Web Front End Services
-1. Checkout the step4 branch and list files in it.
+1. Checkout the step4 branch and list files in it. <br>
 ![28](image/img28.png)
-2. So let’s look at the docker-compose.yml file we have:
+2. So let’s look at the docker-compose.yml file we have: <br>
 ![29](image/img29.png)
 3. Now, let’s have a look at the user-facing www/index.php file:
 ![30](image/img30.png)
@@ -77,15 +77,15 @@
 ![33](image/img33.png)
 
 ### Step 5: Redis Service for Caching
-1. Checkout the step5 branch and list files in it.
+1. Checkout the step5 branch and list files in it. <br>
 ![34](image/img34.png)
-2. Let’s first inspect the newly added Dockerfile under the ./www folder:
+2. Let’s first inspect the newly added Dockerfile under the ./www folder: <br>
 ![35](image/img35.png)
 3. Next, we will look at the API server’s api/main.py file where we are utilizing the Redis cache:
 ![36](image/img36.png)
-4. Now, let’s look into the updated docker-compose.yml file:
+4. Now, let’s look into the updated docker-compose.yml file: <br>
 ![37](image/img37.png)
-5. Let’s boot these services up:
+5. Let’s boot these services up: <br>
 ![38](image/img38.png)
 6. we can use docker-compose exec followed by the redis service name and the Redis CLI’s monitor command:
 ![39](image/img39.png)
@@ -93,9 +93,9 @@
 ![40](image/img40.png)
 
 ### Step 6: Swap Python API Service with Ruby
-1. Checkout the step6 branch and list files in it.
+1. Checkout the step6 branch and list files in it. <br>
 ![41](image/img41.png)
-2. With these in place, let’s boot our service stack:
+2. With these in place, let’s boot our service stack: <br>
 ![42](image/img42.png)
 3. We should now be able to access the API (using the updated port number):
 ![43](image/img43.png)
