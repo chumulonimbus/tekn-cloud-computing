@@ -28,27 +28,27 @@ So, what is Orchestration anyways? Well, Orchestration is probably best describe
 ![08](image/img8.png)
 
 ### Section #4 - Scale the application
-1. Scale the number of containers in the sleep-app service to 7 with the docker service update --replicas 7 sleep-app command. replicas is the term we use to describe identical containers providing the same service. 09
+1. Scale the number of containers in the sleep-app service to 7 with the docker service update --replicas 7 sleep-app command. replicas is the term we use to describe identical containers providing the same service. 09 <br>
 ![09](image/img9.png)
-2. We are going to use the docker service ps sleep-app command. If you do this quick enough after using the --replicas option you can see the containers come up in real time.
+2. We are going to use the docker service ps sleep-app command. If you do this quick enough after using the --replicas option you can see the containers come up in real time. <br>
 ![10](image/img10.png)
-3. Scale the service back down to just four containers with the docker service update --replicas 4 sleep-app command
+3. Scale the service back down to just four containers with the docker service update --replicas 4 sleep-app command <br>
 ![11](image/img11.png)
 
 ### Section #5 - Drain a node and reschedule the containers
-1. Take a look at the status of your nodes again by running docker node ls on node1.
+1. Take a look at the status of your nodes again by running docker node ls on node1. <br>
 ![12](image/img12.png)
-2. We are going to take the ID for node2 and run docker node update --availability drain yournodeid. We are using the node2 host ID as input into our drain command. Replace yournodeid with the id of node2.
+2. We are going to take the ID for node2 and run docker node update --availability drain yournodeid. We are using the node2 host ID as input into our drain command. Replace yournodeid with the id of node2. <br>
 ![13](image/img13.png)
-3. Lastly, check the service again on node1 to make sure that the container were rescheduled. You should see all four containers running on the remaining two nodes.
+3. Lastly, check the service again on node1 to make sure that the container were rescheduled. You should see all four containers running on the remaining two nodes. <br>
 ![14](image/img14.png)
 
 ### Cleaning Up
-1. Execute the docker service rm sleep-app command on node1 to remove the service called myservice
+1. Execute the docker service rm sleep-app command on node1 to remove the service called myservice <br>
 ![15](image/img15.png)
-2. Execute the docker ps command on node1 to get a list of running containers
+2. Execute the docker ps command on node1 to get a list of running containers <br>
 ![16](image/img16.png)
-3. You can use the docker kill command on node1 to kill the sleep container we started at the beginning.
+3. You can use the docker kill command on node1 to kill the sleep container we started at the beginning. <br>
 ![17](image/img17.png)
-4. Lets run docker swarm leave --force on node1.
+4. Lets run docker swarm leave --force on node1. <br>
 ![18](image/img18.png)
