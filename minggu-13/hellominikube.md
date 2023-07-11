@@ -30,4 +30,13 @@
 ![10](image/img10.png)
 
 ### Enable addons
+1. List the currently supported addons: <br>
+![11](image/img11.png)
+2. View the Pod and Service you created by installing that addon: <br>
+![12](image/img12.png)
+
 ### Clean up
+1. Now you can clean up the resources you created in your cluster: <br>
+![13](image/img13.png)
+2. Stop the Minikube cluster: <br>
+![14](image/img14.png)
